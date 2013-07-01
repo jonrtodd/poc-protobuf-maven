@@ -1,0 +1,47 @@
+package test;
+
+option java_package = "com.jontodd.util.protobuf.serialization";
+option java_outer_classname = "TestProtos";
+
+// Base object with required fields name and id
+message JellyBeanV1 {
+    required string name = 1;
+    required int32 id = 2;
+}
+
+// Introduce new required color field to V1
+message JellyBeanV2 {
+    required string name = 1;
+    required int32 id = 2;
+    required string color = 3;
+}
+
+// Add explicit default to an existing color property in V2
+message JellyBeanV3 {
+    required string name = 1;
+    required int32 id = 2;
+    required string color = 3 [default = "Default"];
+}
+
+// Add an optional size w/o default to V1
+message JellyBeanV4 {
+    required string name = 1;
+    required int32 id = 2;
+    enum Size { UNKNOWN=0; SMALL=1; MEDIUM=2; LARGE=3; }
+    optional Size size = 3;
+}
+
+// Add a default the optional texture property in V4
+message JellyBeanV5 {
+    required string name = 1;
+    required int32 id = 2;
+    enum Size { UNKNOWN=0; SMALL=1; MEDIUM=2; LARGE=3; }
+    optional Size size = 3 [default = UNKNOWN];
+}
+
+// Add a optional string without a default to V1
+message JellyBeanV6 {
+    required string name = 1;
+    required int32 id = 2;
+    optional string texture = 3;
+}
