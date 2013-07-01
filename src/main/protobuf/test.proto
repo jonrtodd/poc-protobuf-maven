@@ -1,6 +1,6 @@
 package test;
 
-option java_package = "com.jontodd.util.protobuf.serialization";
+option java_package = "com.jontodd.util.protobuf";
 option java_outer_classname = "TestProtos";
 
 // Base object with required fields name and id

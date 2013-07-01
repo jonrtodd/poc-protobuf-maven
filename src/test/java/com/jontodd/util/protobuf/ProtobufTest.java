@@ -1,16 +1,16 @@
-package com.jontodd.util.protobuf.serialization;
+package com.jontodd.util.protobuf;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.UninitializedMessageException;
 import junit.framework.Assert;
 import org.testng.annotations.Test;
 
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV1;
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV2;
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV3;
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV4;
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV5;
-import static com.jontodd.util.protobuf.serialization.TestProtos.JellyBeanV6;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV1;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV2;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV3;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV4;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV5;
+import static com.jontodd.util.protobuf.TestProtos.JellyBeanV6;
 import static org.testng.Assert.assertEquals;
 
 /**
